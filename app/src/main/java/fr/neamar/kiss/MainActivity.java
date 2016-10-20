@@ -591,28 +591,13 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
             launcherButton.setVisibility(View.VISIBLE);
 
             if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-                // Animate transition from loader to launch button
-                launcherButton.setAlpha(0);
-                launcherButton.animate()
-                        .alpha(1f)
-                        .setDuration(animationDuration)
-                        .setListener(null);
-                loaderBar.animate()
-                        .alpha(0f)
-                        .setDuration(animationDuration)
-                        .setListener(new AnimatorListenerAdapter() {
-                            @Override
-                            public void onAnimationEnd(Animator animation) {
-                                loaderBar.setVisibility(View.GONE);
-                                loaderBar.setAlpha(1);
-                            }
-                        });
+                launcherButton.setVisibility(View.GONE);
             } else {
                 loaderBar.setVisibility(View.GONE);
             }
         } else {
-            launcherButton.setVisibility(View.INVISIBLE);
-            loaderBar.setVisibility(View.VISIBLE);
+            //launcherButton.setVisibility(View.INVISIBLE);
+            //loaderBar.setVisibility(View.VISIBLE);
         }
     }
 
@@ -746,7 +731,6 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
 
             } else {
                 list.setVerticalScrollBarEnabled(true);
-                searchEditText.setHint(R.string.ui_search_hint);
                 searcher = new HistorySearcher(this);
                 //Show default scrollview
                 findViewById(R.id.main_empty).setVisibility(View.VISIBLE);

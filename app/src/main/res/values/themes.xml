@@ -25,7 +25,7 @@
         <item name="android:textColor">@color/kiss_text_dark</item>
         <item name="android:textColorSecondary">#7f7f7f</item>
 
-        <item name="searchColor">@color/kiss_text_dark</item>
+        <item name="searchColor">#ffffff</item>
         <item name="resultColor">@color/kiss_text_dark</item>
         <item name="listBackgroundColor">@color/kiss_list_background_inverse</item>
         <item name="searchBackgroundColor">@color/kiss_list_background_inverse</item>
@@ -47,6 +47,7 @@
     </style>
 
     <style name="AppThemeTransparentDark" parent="AppThemeDark">
+        <item name="resultColor">@android:color/white</item>
         <item name="listBackgroundColor">@android:color/transparent</item>
         <item name="dividerDrawable">@drawable/list_separator_transparent</item>
     </style>

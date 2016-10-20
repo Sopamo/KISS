@@ -11,8 +11,8 @@
 
     <ImageView
         android:id="@+id/item_phone_icon"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
         android:layout_marginBottom="@dimen/icon_margin_bottom"
         android:layout_marginLeft="@dimen/icon_margin_left"
         android:layout_marginRight="@dimen/icon_margin_right"

@@ -33,8 +33,8 @@
     </style>
 
     <style name="AppThemeTransparentDark" parent="AppThemeDark">
-        <item name="listBackgroundColor">@android:color/transparent</item>
-        <item name="dividerDrawable">@drawable/list_separator_transparent</item>
+        <item name="listBackgroundColor">#000000</item>
+        <item name="dividerDrawable">@drawable/list_separator_dark</item>
         <item name="android:colorPrimaryDark">@android:color/transparent</item>
     </style>
 
